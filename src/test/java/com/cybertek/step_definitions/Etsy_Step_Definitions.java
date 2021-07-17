@@ -44,7 +44,7 @@ public class Etsy_Step_Definitions {
     }
     @Then("user seen title is Wooden spoon | Etsy")
     public void user_seen_title_is_wooden_spoon_etsy() {
-        String expectedTitle = "Wooden spoon | Etsy";
+        String expectedTitle = "wooden spoon | Etsy";
         String actualTitle = Driver.getDriver().getTitle();
 
         Assert.assertEquals("Title is not as expected ", actualTitle,expectedTitle);
