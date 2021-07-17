@@ -47,7 +47,7 @@ public class Etsy_Step_Definitions {
         String expectedTitle = "wooden spoon | Etsy";
         String actualTitle = Driver.getDriver().getTitle();
 
-        Assert.assertEquals("Title is not as expected ", actualTitle,expectedTitle);
+        Assert.assertEquals("Title is not as expected ", expectedTitle,actualTitle);
 
     }
 
