@@ -41,4 +41,17 @@ public class Google_StepDefinitions {
 
     }
 
+    @When("User searches for {string}")
+    public void userSearchesFor(String arg0) {
+        GoogleSearchPage googleSearchPage = new GoogleSearchPage();
+        googleSearchPage.searchBar.sendKeys(arg0+ Keys.ENTER);
+
+
+    }
+
+    @Then("User should see {string} in the title")
+    public void userShouldSeeInTheTitle(String expectedTitle) {
+
+
+    }
 }

@@ -14,7 +14,6 @@ public class VytrackLogin_StepDefinitions {
     }
 
 
-
     @When("user enters valid username")
     public void user_enters_valid_username() {
 
