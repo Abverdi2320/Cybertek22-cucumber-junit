@@ -9,12 +9,13 @@ import org.junit.runner.RunWith;
 @CucumberOptions(
         plugin = {
                 "html:target/reports4/cucumber-report.html",
-                "json:target/cucumber.json"
+                "json:target/cucumber.json",
+                "rerun:target/rerun.txt"
         },
         features = "src/test/resources/features",
         glue = "com/cybertek/step_definitions",
         dryRun = false,
-        tags =  "@wip"
+        tags =  "@scenarioOutline"
 )
 public class CukesRunner {
 }
